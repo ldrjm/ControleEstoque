@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockMaster Cloud</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- JANELA 1 -->
+      <div class="window">
+
+        <div class="title-bar">
+          <span>StockMaster Cloud</span>
+          <div class="controls">✕</div>
+        </div>
+
+        <div class="window-body">
+
+          <!-- NOME -->
+          <div class="input-group">
+            <label for="nomeProduto">Nome do produto</label>
+            <input type="text" id="nomeProduto" />
+          </div>
+
+          <!-- GRID -->
+          <div class="grid-produto">
+
+            <!-- QUANTIDADE -->
+            <div class="input-group">
+              <label for="quantidade">Quantidade em estoque</label>
+              <input type="number" id="quantidade" />
+            </div>
+
+            <!-- PREÇO UNITÁRIO -->
+            <div class="input-group">
+              <label for="precoUnitario">Preço unitário</label>
+              <input type="number" id="precoUnitario" step="0.01" />
+            </div>
+
+            <!-- CATEGORIA -->
+            <div class="input-group">
+              <label for="categoria">Categoria</label>
+              <select id="categoria">
+                <option value="Eletrônicos">Eletrônicos</option>
+                <option value="Roupas">Roupas</option>
+                <option value="Alimentos">Alimentos</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- BOTÕES -->
+          <div class="buttons">
+            <button id="btnSalvar">
+              Calcular e Salvar
+            </button>
+
+            <button
+              class="btn-secundario"
+              id="btnLimpar"
+              type="button"
+            >
+              Limpar
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- JANELA 2 -->
+      <div class="window">
+
+        <div class="title-bar">
+          <span>Registros</span>
+          <div class="controls">✕</div>
+        </div>
+
+        <div class="window-body">
+
+          <div id="listaProdutos">
+            <div class="produto-card">
+              Nenhum registro ainda
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

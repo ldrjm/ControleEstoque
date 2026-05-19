@@ -1,0 +1,253 @@
+/* =========================
+   FUNDO WINDOWS XP
+========================= */
+
+body {
+    margin: 0;
+    font-family: Tahoma, Verdana, sans-serif;
+    background: #3a6ea5;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* =========================
+   JANELA XP
+========================= */
+
+.window {
+    width: 380px;
+
+    background: #ece9d8;
+
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   BARRA DE TÍTULO XP
+========================= */
+
+.title-bar {
+    height: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 6px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+
+    background: linear-gradient(
+        to bottom,
+        #0a246a 0%,
+        #3a6ea5 45%,
+        #7ba2e7 100%
+    );
+
+    border-bottom: 1px solid #0a246a;
+}
+
+/* =========================
+   BOTÃO FECHAR XP
+========================= */
+
+.controls {
+    width: 18px;
+    height: 18px;
+
+    background: linear-gradient(
+        to bottom,
+        #ff9a9a,
+        #c75050
+    );
+
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #7a0000;
+    border-bottom: 1px solid #7a0000;
+
+    color: white;
+
+    text-align: center;
+    line-height: 18px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* =========================
+   CORPO DA JANELA
+========================= */
+
+.window-body {
+    padding: 12px;
+}
+
+/* =========================
+   GRUPOS DE INPUT
+========================= */
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    color: #000;
+}
+
+/* =========================
+   INPUTS XP
+========================= */
+
+input,
+select {
+    width: 100%;
+
+    padding: 4px;
+
+    font-size: 12px;
+    font-family: Tahoma, Verdana, sans-serif;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-top: 2px inset #808080;
+    border-left: 2px inset #808080;
+    border-right: 2px inset #ffffff;
+    border-bottom: 2px inset #ffffff;
+}
+
+/* =========================
+   GRID DOS PRODUTOS
+========================= */
+
+.grid-produto {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+}
+
+/* =========================
+   ÁREA DOS BOTÕES
+========================= */
+
+.buttons {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+/* =========================
+   BOTÕES XP
+========================= */
+
+button {
+    padding: 5px 12px;
+
+    font-size: 12px;
+    font-family: Tahoma, Verdana, sans-serif;
+
+    background: #d4d0c8;
+
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    cursor: pointer;
+}
+
+/* efeito pressionado */
+
+button:active {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* =========================
+   BOTÃO SECUNDÁRIO
+========================= */
+
+.btn-secundario {
+    background: #c0504d;
+    color: white;
+}
+
+/* =========================
+   LISTA DE PRODUTOS
+========================= */
+
+#listaProdutos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* =========================
+   CARD DOS PRODUTOS
+========================= */
+
+.produto-card {
+    background: white;
+
+    padding: 8px;
+
+    font-size: 12px;
+
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 850px) {
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
